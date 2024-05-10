@@ -1,1 +1,211 @@
-/*  */
+/* Guia:
+    1. Verificar que este bien el linl
+    2. Tener un orden definido (de arriba a abajo)
+    3. Primero se deben hacer las importaciones 
+    */
+
+    /* Importaciones */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    /* Variables */
+    /* Pseudoclase */
+    :root{
+        --tipografia: "Montserrat", sans-serif;
+        --colorFondo: #CDE8E5;
+        --colorClaro: #EEF7FF;
+        --colorTexto:#7AB2B2;
+        --colorContraste: #4D869C;
+    }
+
+
+
+    /* Establecer variables css
+        palera de colores, tipografias (max.3), medidas que se repitan
+        conttantemente */
+    
+        /* 
+        -Selectores
+            Etiqueta general.
+            Clases: especificas, varios elementos pueden tener la misma
+            clase.
+            Id: Sumamente especificos, cada elemento solo puede tener uno.
+        -Pseudoclases (:)
+        -Pseudoelementos (::)
+         */
+
+         body{
+            /* background color */
+            background-color: var(--colorFondo);
+            /* Tipografia */
+            font-family:var(--tipografia);
+            /* Color letra */
+            color:var(--colorClaro);
+            /* Quitar el scroll horizontal */
+            overflow-x: hidden;
+            /* Ajuste a mis dimensiones */
+            box-sizing: border-box;
+            /* Ancho del tamaño de pantalla */
+            width: 100%;
+        }
+
+
+/* Selector universal */
+        *{
+            /* Margen externo */
+            margin: 10;
+            /* Padding interno */
+            padding: 10;
+        }
+
+        /* Header */
+        /* En el contenedor padre definir dimensiones
+         */
+        header{
+            /* border: 5px solid red; */
+            /* vw hace referencia a ancho de pantalla */
+            width: 100%; 
+            /* vh alto de pantalla */
+            height: 20vh;
+        }
+
+        /* contenedores hijos */
+        .menuNav{
+            background-color: var(--colorContraste);
+            /* porcentajes de caja padre */
+            width: 100%;
+            height: 90%;
+        }
+
+        .logo{
+            width: 100px;
+            height: 100px;
+        }
+
+        .listaMenu{
+            /* border: 2px solid red; */
+                        /* Hacer que los elementos hijos se organicen de
+            forma flexible -> Me los pone uno al lado del otro */
+            display: flex;
+            /* Centrar en x */
+            justify-content: center;
+            /* Center in y */
+            align-items: center;
+            /* separaciones entre elementos hijos */
+            gap: 50px;
+            /* 100% de caja nav */
+            height: 100%;
+            width: 100%;
+            /* quitar viñetas lista */
+            list-style: none;
+            
+        }
+
+        .listaMenu a{
+            color: var(--colorFondo);
+            /* quitar la decoracion del texto */
+            text-decoration: none;
+            /* tamaño de texto */
+            font-size: 15px;
+            /* tamaño de la fuente */
+            font-weight: bold;
+        }
+
+        .listaMenu a:hover{
+            color: var(--colorClaro);
+        }
+
+        /* Banner */
+        .baner{
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 10%;
+        }
+
+        .imgBaner{
+            width: 100%;
+            height: 100%;
+        }
+        /*  */
+        /* Main */
+        main{
+            /* border: 5px solid red; */
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Hacer que queden una debajo de la otra */
+            flex-direction: column;
+        }
+        /* Seccion1 */
+        .seccion1{
+            /* border: 2px solid blue; */
+            width: 80%;
+        }
+
+        
+        /* seccion 2 */
+        .seccion2{
+            /* border: 2px solid blue; */
+            width: 80%;
+        }
+
+        
+        #divVideo{
+            /* ponerlos uno al lado del otro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #divVideo iframe{
+            width: 50%;
+        }
+
+        #divVideo p{
+            width: 50%;
+        }
+
+
+
+        
+        /* Seccion 3 */
+        .seccion3{
+            /* border: 2px solid blue; */
+            width: 80%;
+        }
+
+        .divImg{
+            /* border: 5px solid brown; */
+            width: 100%;
+            /* organizar en filas y columnas */
+            display: grid;
+            /* Para las filas */
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .divImg img{
+            width: 100%;
+
+        }
+
+        /* seccion 4 */
+        .seccion4{
+            /* border: 2px solid blue; */
+            width: 80%;
+        }
+
+        .titulo{
+            /* centrar texto */
+            text-align: center;
+            /* texto en mayuscula */
+            text-transform: uppercase;
+            /* primero arriba y abajo segundo izq y derecha */
+            margin:20px 0px;
+        }
+
+
+        
+        /* Footer */
