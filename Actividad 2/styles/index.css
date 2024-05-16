@@ -1,0 +1,61 @@
+/* Importaciones - fuentes*/
+@import url('https://fonts.cdnfonts.com/css/ysabeau-sc');
+@import url('https://fonts.cdnfonts.com/css/quito');
+
+/* Variables 
+    -paleta de colores
+    - tipografia
+    - medidas (opcional)
+*/
+
+/* hace referencia al archivo raiz */
+:root{
+
+    --colorFondo:#D8C37F;
+    --colorEnfasis1:#A4AE20;
+    --colorEnfasis2:#C57023;
+    --colorEnfasis3:#7B361A;
+    --colorTest:#d9d09e85;
+    --colorText2:#19160A;
+
+    --textTitle:'Ysabeau SC', sans-serif;
+    --textContent: 'Quito', sans-serif;
+}
+
+/* Condiciones o estilos iniciales de mi pagina */
+*{
+    margin: 0;
+    padding: 0;
+    /* Asegurarse de que todos los valores se ajusten a la propiedad
+    que quiero */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorFondo);
+    /* Tambien se puede poner como 100vw */
+    width: 100%; 
+    height: auto;
+    /* overflow -> Esconder scroll y elementos que se sobresalen del contenedor */
+    overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+    border: 2px solid red;
+    width: 100vw;
+    /* height: 100px; */
+}
+
+.menuNavegacion{
+    /* Decirle que este fijo a la parte de arriba  */
+    position: fixed;
+    top: 0;
+    /* Decirle que no este al lado izquierdo */
+    /* right: 50%; */
+    background-color: var(--colorEnfasis3);
+
+}
+/* MAIN */
+
+/* FOOTER */

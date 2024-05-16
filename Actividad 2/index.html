@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"content="Laura Mendieta">
+    <meta name="keywords"content="loros">
+    <meta name="description"content="Actividad practica css, flexbox y grid">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- Link favicon -->
+    <link rel="shortcut icon" href="./assets/logo/favicon.png" type="image/x-icon">
+    <title>Practica CSS - Loros</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="menuNavegacion">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img class="imgLogo" src="./assets/logo/logo.png" alt="logo">
+                    <p class="pLogo">Looking for <span class="spanLogo">freedom</span></p>
+                </a>
+            </div>
+            <!-- Lista nav -->
+            <div>
+                <ul class="listaMenu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Proyecto</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Aliados</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- seccion de contenido principal -->
+        <!-- guardar section para tematicas -->
+        <section class="contenedorPrincipal">
+            <h1>Proyecto: Tomemos conciencia</h1>
+            <!-- lorem8 : especifica el tamaño del lorem -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            
+            <!-- Se puede poner article.contenedorImagenes para que haga
+            la etiqueta mas rapido; en caso de que sea un id se pondia 
+            article#contenedor -->
+            <article class="contenedorImagenes">
+                <!-- alt sostenido + clic donde queremos escribir -->
+                 <div class="imagenes img1">
+                    <img src="./assets/images/img1.jpeg" alt="imgProyecto">
+                    <div class="parrafoImg">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum sequi sit, similique quae esse aut nemo asperiores culpa minima dolore at adipisci. Inventore beatae soluta laborum dolorum, sequi ratione.</p>
+                    </div>
+                 </div>
+                 <div class="imagenes img2">
+                    <img src="./assets/images/img2.jpeg" alt="imgProyecto">
+                    <div class="parrafoImg">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum sequi sit, similique quae esse aut nemo asperiores culpa minima dolore at adipisci. Inventore beatae soluta laborum dolorum, sequi ratione.</p>
+                    </div>
+                </div>
+                 <div class="imagenes img3">
+                    <img src="./assets/images/img3.jpeg" alt="imgProyecto">
+                    <div class="parrafoImg">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum sequi sit, similique quae esse aut nemo asperiores culpa minima dolore at adipisci. Inventore beatae soluta laborum dolorum, sequi ratione.</p>
+                    </div>
+                </div>
+                 <div class="imagenes img4">
+                    <img src="./assets/images/img4.jpeg" alt="imgProyecto">
+                    <div class="parrafoImg">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum sequi sit, similique quae esse aut nemo asperiores culpa minima dolore at adipisci. Inventore beatae soluta laborum dolorum, sequi ratione.</p>
+                    </div>
+                </div>
+                 <div class="imagenes img5">
+                    <img src="./assets/images/img7.jpeg" alt="imgProyecto">
+                    <div class="parrafoImg">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum sequi sit, similique quae esse aut nemo asperiores culpa minima dolore at adipisci. Inventore beatae soluta laborum dolorum, sequi ratione.</p>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+        <!-- Seccion de practica flex -->
+        <section class="contenedorFlex">
+            <div class="flexHijo">Caja 1</div>
+            <div class="flexHijo">Caja 2</div>
+            <div class="flexHijo">Caja 3</div>
+            <div class="flexHijo">Caja 4</div>
+            <div class="flexHijo">Caja 5</div>
+        </section>
+    </main>
+    <!-- FOOTHER -->
+    <footer>
+        <!-- &copy; logo de derechos de autor -->
+        <p>Practica desarrollo creado por  &copy; Laura Mendieta 2024</p>
+
+    </footer>
+</body>
+</html>

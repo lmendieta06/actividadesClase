@@ -51,9 +51,9 @@
 /* Selector universal */
         *{
             /* Margen externo */
-            margin: 10;
+            margin: 0;
             /* Padding interno */
-            padding: 10;
+            padding: 0;
         }
 
         /* Header */
@@ -206,6 +206,56 @@
             margin:20px 0px;
         }
 
-
-        
         /* Footer */
+        footer{
+            /* border: 3px solid black; */
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--colorContraste);
+            margin-top: 50px; 
+            gap: 100px;
+        }
+
+        .contacto{
+
+            /* border: 2px solid red; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .listContact{
+            list-style: none;
+        }
+
+        #link{
+            color: white;
+        }
+
+        .footerImg{
+            /* border: 2px solid red; */
+            margin-top: 5px;
+        }
+
+        .imgFooter{
+            width: 150px;
+            height: 150px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Los iconos en css y html se toman como
+        si fueran texto */
+        .redesSociales{
+            /* border: 2px solid red; */
+            text-align: center;
+
+        }
+
+        i{
+            color:white;
+            margin: 15px;
+            margin-top: 10px;
+        }
