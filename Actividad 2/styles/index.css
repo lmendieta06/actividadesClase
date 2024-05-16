@@ -43,19 +43,110 @@ body{
 /* HEADER */
 header{
     border: 2px solid red;
-    width: 100vw;
-    /* height: 100px; */
+    width: 100%;
+    height: 100px;
 }
 
 .menuNavegacion{
-    /* Decirle que este fijo a la parte de arriba  */
-    position: fixed;
-    top: 0;
-    /* Decirle que no este al lado izquierdo */
-    /* right: 50%; */
+    width: 100%;
+    height: 100px;
     background-color: var(--colorEnfasis3);
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* arriba y abajo, izquierda y derecha */
+    padding: 0 20px;
+}
+
+.logo{
+   
+    height: 100%;
 
 }
-/* MAIN */
 
+.logo a{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* quitar la linea de los a */
+    text-decoration: none;
+    font-family: var(--textContent);
+    color: var(--colorTest);
+    /* cambiar grosor */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.pLogo{
+    width: 150px;
+    /* cambiar la forma del texto */
+    /* text-align: right; */
+}
+
+.spanLogo{
+    color: var(--colorEnfasis1);
+}
+
+.imgLogo{
+    height: 100%;
+}
+
+.listaMenu{
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.listaMenu a{
+    text-decoration: none;
+    color: var(--colorTest);
+    font-family: var(--textContent);
+    font: 20px;
+}
+
+.listaMenu a:hover{
+    color: var(--colorEnfasis1);
+}
+/* MAIN */
+main{
+    width: 100%;
+    padding: 100px;
+
+}
+
+.contenedorPrincipal{
+    color: var(--colorText2);
+    font-family: var(--textContent);
+}
+
+.contenedorPrincipal h1{
+    font-family: var(--textTitle);
+    color: var(--colorEnfasis3);
+    font-size: 40px;
+}
+
+.contenedorImagenes{
+    border: 3px solid var(--colorEnfasis3);
+    margin-top: 50px;
+    border-radius: 30px;
+}
 /* FOOTER */
+
+footer{
+    background-color: var(--colorEnfasis3);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorTest);
+    font-family: var(--textContent);
+    font-size: 20px;
+}
