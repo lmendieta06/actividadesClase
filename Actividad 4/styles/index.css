@@ -1,0 +1,137 @@
+/* Variables */
+
+:root{
+    --colorFondo: #F5DAD2;
+    --colorContraste2:#75A47F;
+    --colorContraste: #BACD92;
+    --colorTexto: #FCFFE0;
+
+    --tipografia: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+/* selector universal */
+*{
+    padding: 0;
+    margin: 0;
+    /* Siempre poner lo siguiente*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorFondo);
+    font-family: var(--tipografia);
+    font-size: 25px;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header{
+    width: 100vw;
+    height: auto;
+}
+
+.titulo{
+    width: 100%;
+    height: 150px;
+    background-color: var(--colorContraste);
+    display: grid;
+    place-content: center;
+    color: var(--colorTexto);
+}
+
+/* Comienza el carrusel de imagenes */
+.contenedor-slider{
+    border: solid 3px var(--colorContraste2);
+    width: 1000px;
+    height: 500px;
+    /* Formas de centrar contenedores */
+    /* El auto a los lados es necesario */
+    margin: 100px auto;
+    /* Crear un scroll en el article
+    Se pone aca ya que es el contenedor padre */
+    /* Al ponerlo dejan de sobresalir las imagenes */
+    /* overflow-x: scroll; */
+    overflow: hidden;
+}
+
+/* La animacion se hace directamente aca
+ya que es el que contiene las imagenes */
+.slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    /* --------------VALORES BASICOS DE UNA ANIMACION------------ */
+    /* Para que funcione se deben poner los keyframes */
+    /* animation: name */
+    /* nombre que se conecta con el keyframe */
+    animation-name: deslizar;
+    /* tiempo de duracion de la animacion */
+    animation-duration: 10s;
+    /* Cuantas veces quiero que se repita */
+    animation-iteration-count: infinite;
+    /* forma en que se vera el movimiento */
+    animation-timing-function: ease-in-out;
+    /* Determinar la direccion de la animacion */
+    animation-direction: alternate ;
+}
+
+/* Las animaciones se pueden mezclar */
+/* Vamos a poner a funcionar la animacion */
+/* inicio:0% mitad:50% final:100% 
+from  ->  to*/
+@keyframes deslizar {
+    from{
+        /* Avisar que se va a transformar */
+        /* Especificar eje */
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-75%);
+    }
+    50%{
+        transform: translateX(-150%);
+    }
+    75%{
+        transform: translateX(-225%);
+    }
+    to{
+        transform: translateX(-300%);
+    }
+}
+
+/* @keyframe rotar{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+} */
+
+/* @keyframe escala{
+    from{
+        transform: scale(0.4)
+    }
+    to{
+        transform: scale(1.4)
+    }
+} */
+.contenedor-slider img{
+    width: 100%;
+    height: 100%;
+    /* Funciona para hacer que la imagen cubra todo */
+    /* object-fit: cover; */
+}
+/* MAIN */
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: var(--colorContraste);
+    /* Poner el texto en la mitad tanto en x como en y */
+    display: grid;
+    place-content: center;
+    color: var(--colorTexto);
+    font-family: var(--tipografia);
+}
