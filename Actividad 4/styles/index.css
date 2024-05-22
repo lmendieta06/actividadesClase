@@ -37,13 +37,32 @@ header{
     display: grid;
     place-content: center;
     color: var(--colorTexto);
+    /* Hacer que la transformacion sea mas amable */
+    /* cambiar el color */
+    /* all -> cambia todo lo que se tenga */
+    /* Esto debe estar si o si en el elemento que va a cambiar */
+    transition: all 500ms ease-in-out;
+
 }
+
+/* Pasa algo cuando el cursor pasa por encima */
+/* El :active es cuando le doy clic a algo */
+.titulo:hover{
+    background-color: var(--colorContraste2);
+    color: white;
+    /* Se puede poner transformaciones directamente en hover */
+    /* Hacer que sea mas grande */
+    transform: scale(1.2);
+}
+
 
 /* Comienza el carrusel de imagenes */
 .contenedor-slider{
     border: solid 3px var(--colorContraste2);
-    width: 1000px;
-    height: 500px;
+    /* Para el responsive no se usa
+    px sino valores como % y el vw o vh */
+    width: 75%;
+    height: 65vh;
     /* Formas de centrar contenedores */
     /* El auto a los lados es necesario */
     margin: 100px auto;
@@ -124,6 +143,38 @@ from  ->  to*/
     /* object-fit: cover; */
 }
 /* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+    font-family: var(--tipografia);
+}
+.contenido{
+    border: 3px solid var(--colorContraste2);
+    width: 75%;
+    height: auto;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloSecundario{
+    text-align: center;
+    color:var(--colorContraste);
+    margin: 20px;
+}
+.imgParrafo{
+    display: flex; 
+    align-items: center;
+    gap: 35px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.imgParrafo img, .imgParrafo p{
+    width: 50%;
+    height: 100%;
+}
 /* FOOTER */
 footer{
     width: 100%;
@@ -134,4 +185,37 @@ footer{
     place-content: center;
     color: var(--colorTexto);
     font-family: var(--tipografia);
+}
+
+/* Diseño responsive
+- Trabajar en porcentajes o medidas no fijas
+- MEDIA QUERIES */
+
+/* MEDIA QUERIES
+-> Me permiten cambiar la apariencia de mis elementos
+en funcion del tamaño de el tamaño de la pantalla
+
+ANCHO
+    DIMENSION MIN. PARA PC: 1200px en adelante
+    DIMENSION MIN. PARA TABLET: 490px - 500px - 1024px
+    DIMENSION MIN. PARA CELULAR: 320px - 490px
+*/
+
+/* Estilos para celular */
+@media screen and (max-width:490px ){
+    .titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .imgParrafo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgParrafo img, .imgParrafo p{
+        width: 100%;
+        height: 100%;
+    }
+
 }
