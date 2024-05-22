@@ -1,0 +1,232 @@
+@import url('https://fonts.cdnfonts.com/css/mangleka');
+/* font-family: 'Mangleka', sans-serif; */
+@import url('https://fonts.cdnfonts.com/css/gemulir-trial');
+/* font-family: 'Gemulir Trial', sans-serif; */
+
+/* Variables 
+    -paleta de colores
+    - tipografia
+    - medidas (opcional)
+*/
+
+:root{
+    --colorFondo: #FBF8DD;
+    --colorContraste: #66BFBF;
+    --colorTexto1:#EAF6F6;
+    --colorTexto2: #151515;
+    --colorTitulo:#FF0063;
+
+    --fontText:'Mangleka', sans-serif;
+    --fontTitle:'Gemulir Trial', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorFondo);
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 100px;
+}
+
+.menuNavegacion{
+    width: 100%;
+    height: 100px;
+    background-color: var(--colorContraste);
+    /* hacer que se sobreponga y se fije */
+    position: fixed;
+    /* esta es la propiedad que lo hace */
+    z-index: 100;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* arriba y abajo, izquierda y derecha */
+    padding: 10px 30px;
+}
+
+.logo{
+   
+    height: 100%;
+
+}
+
+.logo img{
+    height: 100%;
+}
+
+.listaMenu{
+
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.listaMenu a{
+    text-decoration: none;
+    color: var(--colorTexto1);
+    font-family: var(--fontText);
+    font: 20px;
+}
+
+.listaMenu a:hover{
+    color: var(--colorFondo);
+}
+
+/* main */
+
+main{
+    width: 100%;
+    padding: 100px;
+}
+
+/* Contenedor imagenes inicio */
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontText);
+    color: var(--colorTexto2);
+    gap: 50px;
+
+}
+
+.inicio h1{
+    font-family: var(--fontTitle);
+    color: var(--colorTitulo);
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.contenedorImgPrincipal{
+    width: 50%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 30px;
+}
+
+.contenedorImgPrincipal img{
+    width: 300px;
+    height: 300px;
+}
+
+.imagenesP{
+    display: grid;
+    position: relative;
+}
+
+.img1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.img2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.img3{
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+}
+
+.parrafo{
+    width: 50%;
+    padding: 50px;
+}
+
+/* Galeria de imagenes */
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid red;
+}
+
+.contenedorImg{
+    border: 2px solid green;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.galeria h2{
+    color: var(--colorTitulo);
+    font-family: var(--fontTitle);
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.contenedorImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.imgGaleria{
+    border: 2px solid violet;
+    display: grid;
+    position: relative;
+}
+
+.img4{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.img5{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.img6{
+    grid-row: 1/2;
+    grid-column: 3/4;
+
+}
+
+.img7{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.img8{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.img9{
+    grid-row: 2/3;
+    grid-column: 3/4;
+
+}
+
+/* footer */
+
+footer{
+    background-color: var(--colorContraste);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorTexto1);
+    font-family: var(--fontText);
+    font-size: 20px;
+}
