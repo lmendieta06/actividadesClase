@@ -1,0 +1,15 @@
+/* MI CARRUSEL */
+.miCarrusel{
+    width: 100%;
+    height: 50vh;
+    /* Se puede poner padding, borden, etc. */
+}
+
+.miCarrusel img{
+    width: 100%;
+    height: 50vh;
+    /* mejorar la vista de la imagen */
+    object-fit: cover;
+    /* cambiar posicion de la pagins la imagen */
+    object-position:top;
+}
