@@ -10,6 +10,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Link iconos de bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link bootstrap para otros -->
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.0/mdb.min.css"
+    rel="stylesheet"
+    />
     <!-- SIEMPRE DEBE ESTAR DESPUES DE LOS ESTILOS DE BOOTSTRAP -->
     <link rel="stylesheet" href="./styles/index.css">
     <title>E - COMMERCE</title>
@@ -37,7 +53,7 @@
         dark -> negro -->
         <nav class="navbar navbar-expand-lg bg-dark fs-5 ">
             <!-- container-fluid ->100% 
-                container -> Esta acorde al usuario-->
+                container -> Esta dando el margen acorde al usuario-->
             <div class="container miNavbar " >
               <a class="navbar-brand text-light" href="#">
                 <!-- Añadir logo -->
@@ -93,13 +109,182 @@
     </header>
     <!-- MAIN -->
     <main>
+<!-- SECCION DE MARCAS ALIADAS -->
+      <section class="bg-white container my-5 p-2">
+        <!-- Recomendacion: crear clase propia -->
+        <!-- Se pueden llamar las clases de bootstrap al css
+        pero es mejor crear la otra clase para evitar conflictos -->
+        <div class="row misLogos">
+          <!-- EL ORDEN DE CLASES PARA LAS PANTALLAS
+          1. pantallas pequeñas
+          2. pantallas medianas
+          3. pantallas grandes -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="./assets/logos/logo1.webp" alt="logoAsociado">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="./assets/logos/logo2.webp" alt="logoAsociado">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="./assets/logos/logo3.webp" alt="logoAsociado">
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <img src="./assets/logos/logo4.webp" alt="logoAsociado">
+          </div>
+          <div class="col-12 col-md-12 col-lg-6">
+            <img src="./assets/logos/logo5.webp" alt="logoAsociado">
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion de productos -->
+      <!-- 
+        1. LAYOUT
+        2. ORGANIZAR BREAKPOINTS
+        3. COMPONENTES
+        4. MODIFICAR CLASES -->
+
+        <!-- CREAR CONTAINER -->
+      <section class="container">
+        <!-- CREAR FILA -->
+        <!-- Tambien se puede poner gap -->
+        <div class="row misProductos grid gap-0">
+          <!-- CREAR CO0LUMNAS -->
+          <div class="col-12 col-md-6 col-lg-3" >
+            <!-- AÑADIR ELEMENTOS BOOTSTRAP (CARDS)-->
+            <div class="card border border-dark" >
+              <!-- display flex con bootstrap en columnas-->
+              <div class="card-body d-flex flex-column">
+                <!-- alinear texto -->
+                <h5 class="card-title text-center mb-4">TORTA FRUTOS ROJOS</h5>
+                <img src="./assets/products/img1.webp" class="card-img-top" alt="torta">
+                <a href="#" class="btn btn-dark mt-5 ">$12.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- AÑADIR ELEMENTOS BOOTSTRAP (CARDS)-->
+            <div class="card border border-dark">
+              <!-- display flex con bootstrap en columnas-->
+              <div class="card-body d-flex flex-column">
+                <!-- alinear texto -->
+                <h5 class="card-title text-center mb-4">TORTA DE CHOCOLATE</h5>
+                <img src="./assets/products/img2.webp" class="card-img-top" alt="torta">
+                <a href="#" class="btn btn-dark mt-5 ">$12.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- AÑADIR ELEMENTOS BOOTSTRAP (CARDS)-->
+            <div class="card border border-dark">
+              <!-- display flex con bootstrap en columnas-->
+              <div class="card-body d-flex flex-column">
+                <!-- alinear texto -->
+                <h5 class="card-title text-center mb-4">BANANA SPLIT</h5>
+                <img src="./assets/products/img3.webp" class="card-img-top" alt="torta">
+                <a href="#" class="btn btn-dark mt-5 ">$12.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- AÑADIR ELEMENTOS BOOTSTRAP (CARDS)-->
+            <div class="card border border-dark">
+              <!-- display flex con bootstrap en columnas-->
+              <div class="card-body d-flex flex-column">
+                <!-- alinear texto -->
+                <h5 class="card-title text-center mb-4">CUPCAKE FRUTOS ROJOS</h5>
+                <img src="./assets/products/img4.webp" class="card-img-top" alt="torta">
+                <a href="#" class="btn btn-dark mt-5 ">$12.000</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
 
     </main>
     <!-- FOOTER -->
-    <footer>
-
+    <footer class="text-center bg-dark mt-3">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2020 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">Laura Mendieta</a>
+      </div>
+      <!-- Copyright -->
     </footer>
-
+    <!-- Link para bootstrap material desing -->
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.0/mdb.umd.min.js"
+    ></script>
     <!-- Link de bootstrap (SIEMPRE VA EN EL BODY - ANTES DEL CIERRE) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

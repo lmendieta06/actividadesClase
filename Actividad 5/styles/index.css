@@ -1,15 +1,34 @@
 /* MI CARRUSEL */
 .miCarrusel{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     /* Se puede poner padding, borden, etc. */
 }
 
 .miCarrusel img{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     /* mejorar la vista de la imagen */
     object-fit: cover;
     /* cambiar posicion de la pagins la imagen */
     object-position:top;
+}
+
+/* Seccion logos */
+
+.misLogos img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.misLogos div{
+    /* Centrar elementos de las columnas */
+    text-align: center;
+}
+
+/* Cambiar tamaño de productos */
+.misProductos img{
+    width: 250px;
+    height: 250px;
 }
