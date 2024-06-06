@@ -7,6 +7,8 @@ if(funcionElegida==1){
     let numeroAEvaluar = parseInt(prompt("Ingrese un numero: "));
 
     evaluarPar(numeroAEvaluar);
+}else{
+    alert("LA OPCION NO EXISTE")
 }
 
 function sumar(a,b){
