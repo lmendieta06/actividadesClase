@@ -5,14 +5,19 @@ if(funcionElegida==1){
     sumar(numeroUno, numeroDos);
 }else if(funcionElegida==2){
     let numeroAEvaluar = parseInt(prompt("Ingrese un numero: "));
-    if(numeroAEvaluar % 2 ==0){
-        alert(`El numero ${numeroAEvaluar} es par`)
-    }else{
-        alert(`El numero ${numeroAEvaluar} es impar`)
-    }
+
+    evaluarPar(numeroAEvaluar);
 }
 
 function sumar(a,b){
     resultadoSuma = a+b;
     alert(`El resultado de la suma es ${resultadoSuma}`);
+}
+
+function evaluarPar(x){
+    if(x % 2 ==0){
+        alert(`El numero ${x} es par`)
+    }else{
+        alert(`El numero ${x} es impar`)
+    }
 }
